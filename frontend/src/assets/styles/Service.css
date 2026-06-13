@@ -1,0 +1,54 @@
+.service_container {
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: 20px 0;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid var(--slate-200);
+  padding: 1.5rem 1rem;
+  width: 92%;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  transition: var(--transition-smooth);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-teal);
+  box-shadow: 0 12px 20px -5px rgba(13, 148, 136, 0.08);
+}
+
+.service-card img {
+  height: 48px;
+  object-fit: contain;
+  transition: var(--transition-smooth);
+}
+
+.service-card:hover img {
+  transform: scale(1.1) rotate(1deg);
+}
+
+.service-card h5 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.service-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}

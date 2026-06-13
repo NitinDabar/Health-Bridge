@@ -1,0 +1,72 @@
+.bloodcard {
+  position: relative;
+  width: 250px;
+  height: auto;
+  border: 1px solid var(--slate-200);
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  transition: var(--transition-smooth);
+  padding-bottom: 1.5rem;
+  margin: 1.5rem 0.8rem;
+}
+
+.bloodcard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(239, 68, 68, 0.2); /* Soft red on hover to indicate blood category */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05);
+}
+
+.bloodcard .imgBx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background-color: var(--slate-50);
+  border-bottom: 1px solid var(--slate-100);
+}
+
+.bloodcard .imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.bloodcard:hover .imgBx img {
+  transform: scale(1.03);
+}
+
+.bloodcard .name {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bloodcard .name span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  transition: var(--transition-smooth);
+}
+
+.bloodcard:hover .name span {
+  color: #ef4444; /* Blood donor signature red */
+}
+
+.bloodcard .group {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.bloodcard .group strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.bloodcard .group p {
+  margin: 0;
+}
+

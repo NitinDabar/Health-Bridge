@@ -1,0 +1,118 @@
+.doctor_container {
+  padding: 40px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#ourdoctor {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-dark);
+}
+
+.doctorh1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--slate-900);
+  margin-bottom: 2rem;
+}
+
+.doctorh5 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--slate-800);
+}
+
+/* Card overrides for doctors */
+.cardxx {
+  background: #ffffff !important;
+  border: 1px solid var(--slate-200) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02) !important;
+  transition: var(--transition-smooth) !important;
+  overflow: hidden;
+  padding: 1.8rem 1rem 1.2rem 1rem;
+  text-align: center;
+}
+
+.cardxx:hover {
+  transform: translateY(-5px);
+  border-color: rgba(79, 70, 229, 0.2) !important;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.cardxx img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border: 3px solid var(--slate-100);
+  transition: var(--transition-smooth);
+}
+
+.cardxx:hover img {
+  border-color: var(--primary-teal);
+  transform: scale(1.03);
+}
+
+.doctorh3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  transition: var(--transition-smooth);
+}
+
+.cardxx:hover .doctorh3 {
+  color: var(--primary-teal);
+}
+
+.cardxx h5 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--primary-indigo);
+  margin-bottom: 0.2rem;
+}
+
+.cardxx h6 {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.cardxx p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  height: 2.2rem;
+  overflow: hidden;
+}
+
+/* Social icons layout */
+.fontSizeChanging {
+  font-size: 18px;
+  transition: var(--transition-smooth);
+  color: var(--slate-300);
+}
+
+.fb:hover .fontSizeChanging {
+  color: #1877f2;
+  transform: translateY(-2px);
+}
+
+.tw:hover .fontSizeChanging {
+  color: #1da1f2;
+  transform: translateY(-2px);
+}
+
+.ig:hover .fontSizeChanging {
+  color: #e1306c;
+  transform: translateY(-2px);
+}
+
+.in:hover .fontSizeChanging {
+  color: #0077b5;
+  transform: translateY(-2px);
+}
+
+
+  

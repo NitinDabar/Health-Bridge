@@ -1,0 +1,96 @@
+#home-icon {
+  padding: 80px 0;
+  background-color: var(--slate-50);
+}
+
+.containerx {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.box {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid var(--slate-200);
+  border-radius: 16px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 315px;
+  min-height: 320px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: var(--transition-smooth);
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-teal);
+  box-shadow: 0 15px 25px rgba(13, 148, 136, 0.08);
+}
+
+.box img {
+  height: 55px;
+  margin-bottom: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.box h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-bottom: 0.8rem;
+}
+
+.box p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+}
+
+/* Material UI button override inside boxes */
+.box button {
+  background: var(--slate-900) !important;
+  color: #fff !important;
+  border-radius: 30px !important;
+  padding: 6px 20px !important;
+  font-size: 0.88rem !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: var(--transition-smooth) !important;
+  box-shadow: none !important;
+}
+
+.box:hover button {
+  background: var(--primary-teal) !important;
+  box-shadow: 0 10px 15px -3px rgba(13, 148, 136, 0.3) !important;
+}
+
+#box-2 button {
+  background: var(--primary-indigo) !important;
+}
+
+.box#box-2:hover button {
+  background: var(--primary-indigo-hover) !important;
+  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3) !important;
+}
+
+.btnlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btnlink:hover {
+  color: inherit;
+}
+

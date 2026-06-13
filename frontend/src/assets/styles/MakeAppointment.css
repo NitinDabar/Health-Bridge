@@ -1,0 +1,88 @@
+.make-appointment {
+  background: linear-gradient(135deg, var(--primary-teal) 0%, var(--primary-indigo) 100%) !important;
+  position: relative;
+  min-height: 340px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -10px rgba(13, 148, 136, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-smooth);
+}
+
+.make-appointment::before {
+  display: none !important; /* Remove light overlay */
+}
+
+.appointment_container {
+  position: relative;
+  z-index: 1;
+  padding: 0 3rem;
+}
+
+.front {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.front h5 {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+}
+
+.front h1 {
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 2.3rem;
+  line-height: 1.25;
+}
+
+.front p {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.make-appointment .medicine-promo-img {
+  max-height: 360px;
+  transform: translateY(10px) scale(1.05);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.2));
+  transition: var(--transition-smooth);
+}
+
+.make-appointment:hover .medicine-promo-img {
+  transform: translateY(0px) scale(1.08);
+}
+
+.contact1-form-btn1 {
+  max-width: 160px;
+  height: 46px;
+  border-radius: 30px;
+  background: #ffffff !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-teal) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28px;
+  text-decoration: none !important;
+  transition: var(--transition-smooth);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact1-form-btn1:hover {
+  background: #f4f4f4 !important;
+  color: var(--primary-indigo) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+
+  
+
