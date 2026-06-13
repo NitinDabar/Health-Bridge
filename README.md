@@ -1,109 +1,159 @@
-# HealthBridge
+# 🏥 HealthBridge – Full-Stack Digital Healthcare Platform
 
-The Idea Of “HealthBridge – A Complete Health Care” Website Using Mern Stack Development.
+HealthBridge is a comprehensive MERN-stack web application designed to bridge the gap between patients, doctors, medical suppliers, and emergency blood donors. It provides a user-friendly system for doctor appointments, medicine purchasing, live consultation, and emergency blood donor tracking.
 
-## Background and Motivation
+---
 
-In the event of a pandemic, everyone must rely on the internet. In Online People Don’t Always Get Their Desired Health Related Information Because There Are Very Few Health Related Website In Our Country. So We Decided To Work On Such An Idea Where We Can Utilize One Of The Important Sector In Bangladesh.
-So That People Can Easily Get Their Desired Information During An Emergency Situation Or Pandemic. HealthBridge Is Very Essential For Everyone. HealthBridge Is The
-Electronic Management Of Health Information To Deliver Safer, More Efficient ,And Better Quality Healthcare. HealthBridge Benefits Patient Care By Providing New
-Ways Of Managing Health Information And The Deliver Them Online. A Personal Digital Healthcare Environment Gives People More Insight Into Their Health.
+## 🌟 Key Features
 
-## Objective 
-We Want To Make A HealthBridge Platform With Better User Interface And More
-Beneficial.
-- Create A User Friendly System, So The Healthcare System Will Be Equitable.
-- Create A Valuable Information System Enhancing The Quality Of Life For
-Everyone.
-- Full Online Support For A Medical Environment System.
-- Following Emergency Protocol And Buying Medicine Online.
-- Easily Get Doctor List And Information From Anywhere.
-- Ambulance And Blood Managing Within A Few Minutes.
-- Enable Fast And Remote Healthcare Monitoring.
+### 👤 User Authentication & Management
+* **Secure Registration & Login:** Protected by JWT cookies.
+* **Email Verification:** Account verification links sent automatically upon registration.
+* **Password Recovery:** Secure password reset links sent via email.
+* **Profile Management:** Users and doctors can manage their profiles and view history.
 
-## Project Features:
-- User Registration and Sign In Option including account verification and password reset from gmail.
-- Medicine Info & Add Medicine to Cart then buy.
-- Applying promo code to get discount.
-- Shopping Address and Payment Method.
-- Pay Using AamarPay(BD) And Paypal(Global)
-- Post Review About That Medicine. 
-- Doctor Info & Get Doctor Appointment.
-- Blood Info & Smart Search and Filter Option For Donors.
-- Request For Blood In Emergency Situation.
-- Chat with administrator regarding doctors and more.
-  
-**General Admin (Staff) Controls** 
-- Can See People Order.
-- Can Add Anything.
-- Can Update Anything.
-- Can Delete Anything.
-- Can See All History.
-- Can Approve, Deliver Orders, Appointments and Requests.
-- Category Pages Optimized for SEO.
-- Responsive Layout.
+### 💊 E-Pharmacy & Order Management
+* **Medicine Catalog:** Search, filter, and view details of available medicines.
+* **Review System:** Rate and write feedback for medicines.
+* **Shopping Cart & Checkout:** Add items, apply promo codes, and specify delivery details.
+* **Dual Payment Gateways:** Pay securely using **PayPal (Global)** or **AamarPay (Bangladesh)**.
 
-## User Interface :
-<p align="center">
-  <b>Title</b><br>
-    <img src="ss/title.JPG">
-   <b> Registration / User Login / Forget Password</b><br>
-    <img src="ss/login.jpg">
-    <img src="ss/reg.jpg">
-    <img src="ss/forget.jpg">
-    <br><b> Medicine Info Page</b><br>
-    <img src="ss/medicine_page.jpg">
-    <b> Medicine Page Details</b><br>
-    <img src="ss/medicine_details.jpg">
-    <br><b> Purchase Process</b><br>
-    <img src="ss/purchase 1.jpg">
-    <img src="ss/purchase 2.jpg">
-    <br><b> Select Payment</b><br>
-    <img src="ss/select_payment.jpg"><br>
-    <b> AamarPay</b><br>
-    <img src="ss/amarpay.jpg"><br>
-    <b> Paypal</b><br>
-    <img src="ss/paypal.jpg"><br>
-    <b> Doctor Info</b><br>
-    <img src="ss/doctorInfo.jpg">
-    <b> Doctor Details</b><br>
-    <img src="ss/doctordetails.jpg">
-    <b> Appointment Process</b><br>
-    <img src="ss/selectdate.jpg">
-    <img src="ss/patientinfo.jpg">
-    <br><b> Appointment Confirm</b><br>
-    <img src="ss/appointment.jpg">
-    <br><b> Blood Donors</b><br>
-    <img src="ss/blooddonors.jpg">
-    <br><b> Filter Donor</b><br>
-    <img src="ss/filterdonor.jpg">
-    <br><b> Request Blood</b><br>
-    <img src="ss/request_form.jpg">
-    <img src="ss/req_sumary.jpg"><br>
-    <b> Approving Request From Admin Panel</b><br>
-    <img src="ss/approving donor from admin.JPG">
-    <b> User Profile </b><br>
-    <img src="ss/userprofile.jpg">
-    <b> Admin Profile</b><br>
-    <img src="ss/adminprofile.jpg">
-    <b> Medicine Panel</b><br>
-    <img src="ss/medicinepanel.jpg">
-    <b> Create, Update and Delete Medicines</b><br>
-    <img src="ss/create update and del medicine.JPG">
-    <b> Doctor Panel</b><br>
-    <img src="ss/doctorpanel.jpg">
-    <b> Create, Update and Delete Doctors</b><br>
-    <img src="ss/create updaet and del doctor.JPG">
-    <b> Donor Panel</b><br>
-    <img src="ss/donorpanel.jpg">
-    <b> Create, Update and Delete Donors</b><br>
-    <img src="ss/create update and del donor.JPG">
-    <b> Users Panel</b><br>
-    <img src="ss/userpanel.jpg">
-    <b> Update and Delete Users</b><br>
-    <img src="ss/edit user and del.JPG">
-    <b> Appointments,Orders and Requests</b><br>
-    <img src="ss/appointment order and request.JPG">
+### 👨‍⚕️ Doctor Directory & Appointments
+* **Doctor Listings:** Browse doctors by specialization, experience, and fees.
+* **Online Booking:** Select dates and schedule consultation appointments.
 
-</p>
+### 🩸 Emergency Blood Hub
+* **Smart Search:** Find blood donors filtered by group and area.
+* **Blood Requests:** Post emergency requests that administrative staff can approve.
 
+### 💬 Live Consultation
+* **Real-time Chat:** Chat directly with administrative staff and healthcare experts via integrated real-time chat.
+
+### 🛡️ Administrative Panel
+* **Dashboard:** Manage medicines, approve blood requests, schedule appointments, track orders, and edit users.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+* **Core:** React.js (v18), Redux Toolkit (State Management)
+* **Routing:** React Router DOM
+* **Styling:** React Bootstrap, Material-UI, MDB React UI Kit, Styled Components
+* **Integrations:** `@paypal/react-paypal-js`, `react-chat-engine-pretty`, `sweetalert2`
+
+### Backend
+* **Runtime:** Node.js
+* **Framework:** Express.js
+* **Database:** MongoDB (using Mongoose ODM)
+* **Auth:** JSON Web Tokens (JWT) & bcryptjs
+* **File Uploads:** Multer (Local Storage)
+* **Emails:** Nodemailer (SMTP integration)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* [Node.js](https://nodejs.org/) (v16+ recommended)
+* [MongoDB Atlas Account](https://www.mongodb.com/cloud/atlas) or local MongoDB instance
+
+### 1. Clone & Navigate
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+```
+
+### 2. Environment Configuration
+Create a `.env` file in the root directory and configure the following variables:
+
+```ini
+NODE_ENV = development
+PORT = 5000
+MONGO_URI = your_mongodb_connection_uri
+JWT_SECRET = your_jwt_access_secret
+JWT_RESET_SECRET = your_jwt_password_reset_secret
+
+# SMTP Mail configuration
+SMTP_HOST = mail.yourmailserver.com
+SMTP_PORT = 587
+SMTP_USER = info@yourdomain.com
+SMTP_PASS = your_smtp_password
+SMTP_FROM = info@yourdomain.com
+
+# PayPal Configuration
+PAYPAL_CLIENT_ID = your_paypal_client_id
+
+# Chat Engine Configuration
+CHAT_ENGINE_PROJECT_ID = your_chat_engine_project_id
+CHAT_ENGINE_PRIVATE_KEY = your_chat_engine_private_key
+
+# AamarPay Configuration
+AAMARPAY_STORE_ID = your_aamarpay_store_id
+AAMARPAY_SIGNATURE_KEY = your_aamarpay_signature_key
+AAMARPAY_API_URL = https://sandbox.aamarpay.com/jsonpost.php
+
+# Domains
+FRONTEND_URL = http://localhost:3000
+BACKEND_URL = http://localhost:5000
+```
+
+### 3. Install Dependencies
+This project uses older packages that require dependency resolution flags. Run the following commands:
+
+```bash
+# Install root (backend) dependencies
+npm install --legacy-peer-deps
+
+# Install frontend dependencies
+npm install --prefix frontend --legacy-peer-deps
+```
+
+### 4. Seed Database (Optional)
+To pre-populate the database with sample medicines, doctors, and blood donor data:
+```bash
+npm run data:import
+```
+> [!WARNING]
+> This will overwrite existing users, orders, medicines, and doctors in the configured database.
+
+### 5. Run Development Servers
+Start both the backend server and the React frontend concurrently:
+```bash
+npm run dev
+```
+* **Frontend:** `http://localhost:3000`
+* **Backend:** `http://localhost:5000`
+
+---
+
+## 📂 Project Structure
+
+```
+├── backend/
+│   ├── config/          # Database configuration
+│   ├── controller/      # API Route controller logic
+│   ├── data/            # Local seed data
+│   ├── middleware/      # Auth & error handling middlewares
+│   ├── models/          # Mongoose database schemas
+│   ├── routes/          # Express route declarations
+│   ├── utils/           # Nodemailer & JWT utility helpers
+│   └── server.js        # Main backend entry point
+├── frontend/
+│   ├── public/          # Static public assets
+│   └── src/
+│       ├── components/  # Shared React components
+│       ├── Screens/     # Page components (Admin, Doctor, etc.)
+│       ├── slices/      # Redux API/State slices (RTK Query)
+│       ├── constants.js # API endpoints
+│       └── index.js     # React application entry point
+├── uploads/             # Destination for uploaded images
+├── package.json         # Main scripts & dependencies
+└── .env                 # Environment variables (Gitignored)
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
